@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <%= partial "head" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <!--[if lt IE 9]>
+      <%= javascript_include_tag  "html5shiv" %>
+    <![endif]-->
+
+    <!--[if lt IE 8]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="content">
+      <%= yield %>
+    </div>
+
+    <!-- Include Scripts -->
+    <%= partial "vendors/intercom" %>
+    <%= javascript_include_tag  "all" %>
+  </body>
+</html>
