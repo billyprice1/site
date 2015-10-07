@@ -15,6 +15,7 @@ $(() => {
       scrollTop: target
     }, 500)
 
-    event.preventDefault()
   })
+
+  $('.video-link').magnificPopup({type:'iframe'});
 })

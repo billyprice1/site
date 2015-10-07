@@ -39,7 +39,7 @@ body.school .header-block {
     animation-delay: .4s;
 
     @include breakpoint($break-tablet) {
-      margin-top: 8 * $base-line-height;
+      margin-top: 4 * $base-line-height;
     }
   }
 
@@ -50,45 +50,13 @@ body.school .header-block {
     animation-delay: .8s;
   }
 
-  .action-buttons {
-    animation-delay: 1.2s;
-    margin: 90px auto 0 auto;
+  .video-link {
+    display: block;
+    margin: 18rem auto 0;
     text-align: center;
-
-    .button:first-child {
-      margin-right: 15px;
-      padding: 5px 40px;
-    }
+    color: #FFFFFF;
   }
 
-  .scrollto {
-    .arrows {
-      width: 60px;
-      height: 72px;
-      position: absolute;
-      bottom: 10%;
-      left: 50%;
-      margin-left: -30px;
-    }
-
-    .arrows path {
-      stroke: white;
-      fill: transparent;
-      stroke-width: 1px;
-      animation: arrow 3s infinite;
-    }
-
-    @keyframes arrow {
-      0% {opacity: .4}
-      40% {opacity: 1}
-      80% {opacity: .4}
-      100% {opacity: .4}
-    }
-
-    .arrows path.a3 {
-      animation-delay:0s;
-    }
-  }
 }
 
 .school-content {
